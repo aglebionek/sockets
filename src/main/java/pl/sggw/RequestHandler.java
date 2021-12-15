@@ -27,8 +27,9 @@ public class RequestHandler {
 
         // Get request headers and turn them into a hashmap
         String line = in.readLine();
-        String[] methodAndUrl = new String[3];
         System.out.println("Read line:" + line);
+
+        String[] methodAndUrl = new String[3]; 
         try {
             methodAndUrl = line.split(" ");
         } catch (Exception e) {
@@ -37,7 +38,7 @@ public class RequestHandler {
         result.put(REQUEST_METHOD_HEADER_KEY, methodAndUrl[0]);
         result.put(REQUEST_URL_HEADER_KEY, methodAndUrl[1].substring(1, methodAndUrl[1].length()));
         while (!(line = in.readLine()).equals("")) {
-            String[] keyValuePair = line.split(":", 2);
+            String[] keyValuePair = line.split(":", 2); 
             result.put(keyValuePair[0].trim(), keyValuePair[1].trim());
         }
 
