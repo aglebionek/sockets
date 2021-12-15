@@ -1,1 +1,1 @@
-worker: java -jar sockets.jar
+web: java -jar sockets.jar
