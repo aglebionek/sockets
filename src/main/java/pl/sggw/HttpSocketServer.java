@@ -67,7 +67,7 @@ public class HttpSocketServer {
     private static void newClientThread(Socket client) throws IOException {
         PrintWriter out = new PrintWriter(client.getOutputStream());
         HashMap<String, String> requestHeaders = RequestHandler.returnRequestHeaders(client.getInputStream());
-
+        
         String method = requestHeaders.get(REQUEST_METHOD_HEADER_KEY);
         String route = requestHeaders.get(REQUEST_URL_HEADER_KEY);
 
