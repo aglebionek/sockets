@@ -1,0 +1,11 @@
+pl/sggw/HttpSocketServer$1.class
+pl/sggw/database/Deserialize.class
+pl/sggw/RequestHandler$Get.class
+pl/sggw/book/Book.class
+pl/sggw/PrintingDatabase.class
+pl/sggw/RequestHandler.class
+pl/sggw/database/Serialize.class
+pl/sggw/ViewsReader.class
+pl/sggw/Debugging.class
+pl/sggw/RequestHandler$Post.class
+pl/sggw/HttpSocketServer.class

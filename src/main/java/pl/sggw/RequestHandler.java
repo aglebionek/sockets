@@ -112,8 +112,6 @@ public class RequestHandler {
         public static String returnViewForRoute(String route, ConcurrentHashMap<Integer, Book> booksDictionary)
                 throws IOException {
             String view = ViewsReader.defaultView();
-            if (route.equals("favicon.ico"))
-                return view;
             if (route.isEmpty())
                 return view;
             else {
